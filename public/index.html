@@ -20,6 +20,7 @@ background-color:#1959b7;
 <body>
 
 
+
 <div class="container-fluid" ng-controller="mapController2">
 	<div style="height:50px;"></div>
 
@@ -37,6 +38,8 @@ background-color:#1959b7;
 	<h1 style="color:#1959b7; text-align:center;"> Activities Feed </h1>
 
 <ul>
+
+	<!-- EXPLANATION So in this main panel we have three nested repeats. Repeating names of boroughs, then inside that names of macros, then inside that names of neighborhoods. on click(popClock), color of borough changes to green -->
 
  <li ng-repeat="cleanmacro in cleanmacros | filter:mapController2.query">
 
@@ -70,6 +73,8 @@ background-color:#1959b7;
 </div>
 <div class="col-md-3">
 		<div class="panel panel-default">
+
+			<!-- this is for searching. you can search by anything, it'll search the text directly. alernatively, you can search by presets that affect the query directly. -->
 			<h1 style="color:#1959b7; text-align:center;"> Boroughs </h1>
 			  Search By Macro, Neighborhood, or Borough
 			  <hr style="width:75%; text-align:center;"> 
