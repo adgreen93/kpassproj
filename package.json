@@ -1,0 +1,14 @@
+{
+  "name": "kidpassbuild",
+  "version": "1.0.0",
+  "description": "tet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alex",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.15.0"
+  }
+}

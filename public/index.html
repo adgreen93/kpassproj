@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="kidsApp">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="./js/app.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+
+<style>
+body {
+background-color:#1959b7;
+
+}
+</style>
+
+<body>
+
+
+<div class="container-fluid" ng-controller="mapController2">
+	<div style="height:100px;"></div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+	<div class="panel panel-default">
+	<h1 style="color:#1959b7; text-align:center;"> Boroughs (Section B) </h1>
+<ul ng-repeat="location in locations">
+	<li> {{location.borough.name}} </li>
+		<li>{{location.borough.weight}} </li>
+	<li ng-click="clickAlert()"> {{location.mappings}} </li>
+		</ul>
+<hr>
+
+<ul ng-repeat="location in locations">
+	<li ng-repeat="map2 in location.macro"> {{map2}} </li>
+		
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
+
