@@ -21,24 +21,46 @@ background-color:#1959b7;
 
 
 <div class="container-fluid" ng-controller="mapController2">
-	<div style="height:100px;"></div>
+	<div style="height:50px;"></div>
+
+	<div style="text-align:center">
+			<img src="/img/city_pass.png">
+			<br>
+			<br>
+		</div>
+
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+
+		<div class="col-md-6 col-md-offset-1">
 	<div class="panel panel-default">
-	<h1 style="color:#1959b7; text-align:center;"> Boroughs (Section B) </h1>
-<ul ng-repeat="location in locations">
+		
+	<h1 style="color:#1959b7; text-align:center;"> Boroughs (Section A) </h1>
+<ul ng-repeat="location in locations | filter:mapController2.query">
 	<li> {{location.borough.name}} </li>
 		<li>{{location.borough.weight}} </li>
 	<li ng-click="clickAlert()"> {{location.mappings}} </li>
 		</ul>
-<hr>
+
 
 <ul ng-repeat="location in locations">
 	<li ng-repeat="map2 in location.macro"> {{map2}} </li>
 		
 		</ul>
+
 	</div>
+
+
 </div>
+<div class="col-md-3">
+		<div class="panel panel-default">
+			<h1 style="color:#1959b7; text-align:center;"> Boroughs </h1>
+			 <p style="text-align:center;">Search: <br><input ng-model="mapController2.query" /></p>
+			<ul ng-repeat="location in locations">
+	<li> {{location.borough.name}} </li>
+
+		</ul>
+		</div>
+	</div>
 </div>
 </div>
 
