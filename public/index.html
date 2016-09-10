@@ -40,10 +40,12 @@ background-color:#1959b7;
 
  <li ng-repeat="cleanmacro in cleanmacros | filter:mapController2.query">
 
- 	<p id="boro-level" style="font-size:20px;"> {{cleanmacro.borough.name}} </p>
+ 	<p id="boro-level" style="font-size:20px;"> {{cleanmacro.borough.name}} <br> <p style="color:black"> Weight:{{cleanmacro.borough.weight}}</p></p>
  	<ul>
 <li style="color:red"  ng-repeat="mappings in cleanmacro.mappings | filter:mapController2.query">
  		{{mappings.macro.name}}
+ 		<br>
+ 		<p style="color:black;"> Weight: {{mappings.macro.weight}} </p>
 
  		<ul> 
 
@@ -79,6 +81,7 @@ background-color:#1959b7;
 			 	<option value="Long Island"> Long Island
 			 	<option value="New Jersey"> New Jersey
 			 	</select>
+			 	<hr style="width:75%; text-align:center;">
 			<ul ng-repeat="location in cleanmacros">
 	<li ng-click="filter : '{{location.borough.name}}'"> {{location.borough.name}} </li>
 		</ul>
