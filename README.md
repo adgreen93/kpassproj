@@ -3,7 +3,7 @@ searching through boroughs, neighborhoods, and macro neighborhoods
 
 ![Alt Text](https://github.com/adgreen93/kpassproj/raw/master/public/img/3.png)
 
-Clone to the repo. Since the 
+Clone the repo.
 
 To start the server, **node index.js**
 
