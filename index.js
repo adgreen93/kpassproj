@@ -11,9 +11,8 @@ app.get('/', function(req, res){
 	res.render('home');
 });
 
-
 // STARTS SERVER 
 
 http.listen(3000, function(){
-	console.log('Parallax testing has started.');
+	console.log('City Pass has started on localhost:3000');
 });
