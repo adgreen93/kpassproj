@@ -3,9 +3,11 @@ searching through boroughs, neighborhoods, and macro neighborhoods. Made this as
 
 ![Alt Text](https://github.com/adgreen93/kpassproj/raw/master/public/img/3.png)
 
-Clone the repo.
+* '' Clone the repo. ''
 
-To start the server, **node index.js**
+* npm install 
+
+* node index.js
 
 This is just to get the server running, the only other code that's used is Bootstrap CDN for styling, and Angular for basic filtering.
 
