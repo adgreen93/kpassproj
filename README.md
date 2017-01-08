@@ -3,7 +3,9 @@ searching through boroughs, neighborhoods, and macro neighborhoods. Made this as
 
 ![Alt Text](https://github.com/adgreen93/kpassproj/raw/master/public/img/3.png)
 
-* '' Clone the repo. ''
+# Set Up
+
+* Clone the repo. 
 
 * npm install 
 
