@@ -1,5 +1,5 @@
 # kpassproj
-searching through boroughs, neighborhoods, and macro neighborhoods
+searching through boroughs, neighborhoods, and macro neighborhoods. Made this as part of a coding interview, and even though it's not useful for most people - feel free to play around with it.
 
 ![Alt Text](https://github.com/adgreen93/kpassproj/raw/master/public/img/3.png)
 
